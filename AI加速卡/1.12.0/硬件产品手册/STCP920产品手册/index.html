@@ -5,8 +5,8 @@
 <meta name="generator" content="Docusaurus v3.9.1">
 <title data-rh="true">STCP920产品手册 | 希姆计算文档中心</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/AI加速卡/1.12.0/硬件产品手册/STCP920产品手册"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="1.12.0"><meta data-rh="true" name="docusaurus_tag" content="docs-default-1.12.0"><meta data-rh="true" name="docsearch:version" content="1.12.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-1.12.0"><meta data-rh="true" property="og:title" content="STCP920产品手册 | 希姆计算文档中心"><meta data-rh="true" name="description" content="概述"><meta data-rh="true" property="og:description" content="概述"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/AI加速卡/1.12.0/硬件产品手册/STCP920产品手册"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/AI加速卡/1.12.0/硬件产品手册/STCP920产品手册" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/AI加速卡/1.12.0/硬件产品手册/STCP920产品手册" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"硬件产品手册","item":"https://your-docusaurus-site.example.com/AI加速卡/1.12.0/category/硬件产品手册"},{"@type":"ListItem","position":2,"name":"STCP920产品手册","item":"https://your-docusaurus-site.example.com/AI加速卡/1.12.0/硬件产品手册/STCP920产品手册"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="希姆计算文档中心 RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="希姆计算文档中心 Atom Feed"><link rel="stylesheet" href="/assets/css/styles.7b2fe869.css">
-<script src="/assets/js/runtime~main.aecefcee.js" defer="defer"></script>
-<script src="/assets/js/main.e1c1503a.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.7ff00bf5.js" defer="defer"></script>
+<script src="/assets/js/main.d3756bc2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -179,7 +179,7 @@
 <table><thead><tr><th><strong>低功耗模式</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>省电模式</td><td>芯片包括了4个独立的bank，主机可以通过PCIe控制bank，实现只有1~3个bank工作，让板卡处于省电模式。</td></tr><tr><td>待机模式</td><td>芯片包括了4个独立的bank，主机可以通过PCIe控制bank，实现4个bank都不工作，让板卡处于待机模式。在待机模式下，板卡仅有静态功耗损失。</td></tr><tr><td>DVFS模式</td><td>在低压力应用的场景下，调整芯片的工作电压或者工作主频来降低板卡功耗：<ul> <li>主机可以通过PCIe SMBus管理板卡MCU，降低芯片核电的工作电压。</li> <li>主机可以通过PCIe调整芯片工作主频，目前支持的主频有624MHz、800MHz、900MHz、1GHz、1.2GHz。频率越低，功耗越低。</li> </ul></td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="软硬件协同">软硬件协同<a href="#软硬件协同" class="hash-link" aria-label="软硬件协同的直接链接" title="软硬件协同的直接链接" translate="no">​</a></h2>
 <p>围绕STCP920的全栈软硬件架构图如下：</p>
-<p><img decoding="async" loading="lazy" src="/assets/images/STCP920产品手册-image-1-ef304ffd1f75b57aa32ada51b51f2f73.png" width="996" height="753" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="/assets/images/STCP920产品手册-image-17-35ec02932310b863531be44263526352.png" width="957" height="722" class="img_ev3q"></p>
 <p>软硬件协同方案具有以下优势：</p>
 <ul>
 <li>
