@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstc_docuhub=self.webpackChunkstc_docuhub||[]).push([[4871],{62202:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"pageTAX"}')}}]);

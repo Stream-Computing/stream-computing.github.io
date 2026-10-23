@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-pageAICloud docs-version-current docs-doc-page docs-doc-id-大模型平台使用指南（模型管理员）" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">大模型平台使用指南（模型管理员） | 希姆计算文档中心</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/智算云平台/大模型平台使用指南（模型管理员）"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-pageAICloud-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-pageAICloud-current"><meta data-rh="true" property="og:title" content="大模型平台使用指南（模型管理员） | 希姆计算文档中心"><meta data-rh="true" name="description" content="准备工作"><meta data-rh="true" property="og:description" content="准备工作"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/智算云平台/大模型平台使用指南（模型管理员）"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/智算云平台/大模型平台使用指南（模型管理员）" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/智算云平台/大模型平台使用指南（模型管理员）" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"大模型平台使用指南（模型管理员）","item":"https://your-docusaurus-site.example.com/智算云平台/大模型平台使用指南（模型管理员）"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="希姆计算文档中心 RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="希姆计算文档中心 Atom Feed"><link rel="stylesheet" href="/assets/css/styles.7b2fe869.css">
+<script src="/assets/js/runtime~main.18a1d045.js" defer="defer"></script>
+<script src="/assets/js/main.1e39419e.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/stc_logo.svg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/stc_logo.svg" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/stc_logo.svg" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">STC Docs Hub</b></a><a class="navbar__item navbar__link" href="/AI加速卡/category/硬件产品手册">AI加速卡</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/智算云平台/云管平台使用指南（系统管理员）">智算云平台</a><a class="navbar__item navbar__link" href="/芯周通用智能体/芯周通用智能体">芯周通用智能体</a><a class="navbar__item navbar__link" href="/TAX编译智能体/TAX编译智能体">TAX编译智能体</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/云管平台使用指南（系统管理员）"><span title="云管平台使用指南（系统管理员）" class="linkLabel_WmDU">云管平台使用指南（系统管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/设备管理系统使用指南（系统管理员）"><span title="设备管理系统使用指南（系统管理员）" class="linkLabel_WmDU">设备管理系统使用指南（系统管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/算力调度平台使用指南（租户管理员）"><span title="算力调度平台使用指南（租户管理员）" class="linkLabel_WmDU">算力调度平台使用指南（租户管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/算力调度平台使用指南（租户用户）"><span title="算力调度平台使用指南（租户用户）" class="linkLabel_WmDU">算力调度平台使用指南（租户用户）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link menu__link--active" aria-current="page" href="/智算云平台/大模型平台使用指南（模型管理员）"><span title="大模型平台使用指南（模型管理员）" class="linkLabel_WmDU">大模型平台使用指南（模型管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/大模型平台使用指南（模型用户）"><span title="大模型平台使用指南（模型用户）" class="linkLabel_WmDU">大模型平台使用指南（模型用户）</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">大模型平台使用指南（模型管理员）</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">版本：Next</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>大模型平台使用指南（模型管理员）</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="准备工作">准备工作<a href="#准备工作" class="hash-link" aria-label="准备工作的直接链接" title="准备工作的直接链接" translate="no">​</a></h2>
+<ul>
+<li>
+<p>确认希姆云平台已部署完毕，能够正常访问登录页面。</p>
+</li>
+<li>
+<p>确认云管平台系统管理员已创建租户且租户状态正常。</p>
+</li>
+<li>
+<p>获取大模型平台管理员账号和密码。</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="典型使用流程">典型使用流程<a href="#典型使用流程" class="hash-link" aria-label="典型使用流程的直接链接" title="典型使用流程的直接链接" translate="no">​</a></h2>
+<ol>
+<li>
+<p>配置鉴权信息，包括云平台密钥、SSH密钥、Access Token。</p>
+</li>
+<li>
+<p>创建模型仓库。</p>
+</li>
+<li>
+<p>上传模型文件。</p>
+</li>
+<li>
+<p>预热和部署模型。</p>
+</li>
+<li>
+<p>获取积分，在体验中心或者通过API调用体验基于大模型的智能问答等服务。</p>
+</li>
+<li>
+<p>查看模型调用记录。</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="登录大模型平台管理端">登录大模型平台管理端<a href="#登录大模型平台管理端" class="hash-link" aria-label="登录大模型平台管理端的直接链接" title="登录大模型平台管理端的直接链接" translate="no">​</a></h2>
+<ol>
+<li>
+<p>登录云管平台或者算力调度平台。</p>
+<ol>
+<li>
+<p>访问希姆云平台登录页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-13-183bdaa47ed24f37ee7dddeeda8a41f1.png" width="1280" height="598" class="img_ev3q"></p>
+</li>
+</ol>
+<ol>
+<li>
+<p>输入系统管理员或者租户管理员的账号和密码。</p>
+</li>
+<li>
+<p>输入验证码。</p>
+</li>
+<li>
+<p>单击<strong>登录</strong>。</p>
+</li>
+</ol>
+</li>
+<li>
+<p>单击<strong>大模型平台</strong>，进入大模型平台管理端登录页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-11-9161b85e9f2b7003e9ee9ef9f55a4003.png" width="1280" height="553" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-12-b1003d78e227dd96c0c2d8340b12016b.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>登录大模型平台管理端。</p>
+<ol>
+<li>
+<p>输入模型管理员账号和密码。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-14-6064e72daca9d23ad88437e7dfbd5b33.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p>输入验证码。</p>
+</li>
+<li>
+<p>单击<strong>登录</strong>。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理账号">管理账号<a href="#管理账号" class="hash-link" aria-label="管理账号的直接链接" title="管理账号的直接链接" translate="no">​</a></h2>
+<p>大模型平台通过账号设置管理当前账号的个人资料、账号密码等信息。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>账号设置</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-a95650a67c2e45558ac6c2d9a664586c.png" width="1280" height="561" class="img_ev3q"></p>
+</li>
+<li>
+<p>查看角色、邮箱等信息。</p>
+</li>
+<li>
+<p>按需修改昵称，然后单击<strong>保存更改</strong>。</p>
+</li>
+<li>
+<p>按需修改密码，然后单击<strong>更新密码</strong>。</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理用户">管理用户<a href="#管理用户" class="hash-link" aria-label="管理用户的直接链接" title="管理用户的直接链接" translate="no">​</a></h2>
+<p>管理大模型平台用户，用户角色分为超级管理员、管理员和普通用户。</p>
+<ul>
+<li>
+<p>超级管理员：大模型平台的初始用户。可登录大模型平台管理端管理所有的后台功能，包括管理员所不具备的查看所有模型、管理所有用户、管理系统设置、管理可用积分、查看操作日志等；也可以登录用户端，在体验中心或者通过API调用体验大模型。</p>
+</li>
+<li>
+<p>管理员：登录大模型平台管理端管理后台功能，但只可管理当前账号相关的后台功能；也可以登录用户端，在体验中心或者通过API调用体验大模型。</p>
+</li>
+<li>
+<p>普通用户：仅可登录大模型平台用户端，在体验中心或者通过API调用体验大模型。在管理端创建或者在用户端注册均可，在用户端注册后，用户信息自动同步到管理端的用户管理列表。</p>
+</li>
+</ul>
+<blockquote>
+<p>注意：管理用户需要超级管理员权限，操作前请确保以超级管理员身份登录大模型平台管理端。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>用户管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-1-cf46934702b0bb15806b0a79897389b5.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写用户的信息。</p>
+<ul>
+<li>
+<p>基础信息：用户名、昵称、邮箱、初始密码。</p>
+</li>
+<li>
+<p>角色：超级管理员拥有最高权限，管理员可登录管理端管理部分后台功能，普通用户只能登录用户端使用模型。</p>
+</li>
+<li>
+<p>状态：正常状态可以登录，禁用状态则无法登录。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>用户添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前用户的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>重置密码</strong>，修改当前用户的登录密码。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前用户。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理系统设置">管理系统设置<a href="#管理系统设置" class="hash-link" aria-label="管理系统设置的直接链接" title="管理系统设置的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置积分赠送规则">设置积分赠送规则<a href="#设置积分赠送规则" class="hash-link" aria-label="设置积分赠送规则的直接链接" title="设置积分赠送规则的直接链接" translate="no">​</a></h3>
+<p>设置新建用户后默认赠送的积分数量。设置生效后，在用户新注册或者后台新建用户时，自动向账号充值积分并写入充值记录。</p>
+<blockquote>
+<p>注意：管理系统设置需要超级管理员权限，操作前请确保以超级管理员身份登录大模型平台管理端。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>系统设置</strong>。</p>
+</li>
+<li>
+<p>进入<strong>新用户赠送积分</strong>页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-2-d637045021b37734f371f9d822c110dd.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>输入默认赠送积分数量。</p>
+</li>
+<li>
+<p>单击<strong>保存赠送积分</strong>。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置积分消耗规则">设置积分消耗规则<a href="#设置积分消耗规则" class="hash-link" aria-label="设置积分消耗规则的直接链接" title="设置积分消耗规则的直接链接" translate="no">​</a></h3>
+<p>设置积分消耗的规则。设置生效后，调用各类模型计量积分消耗时会遵循该规则。</p>
+<blockquote>
+<p>注意：管理系统设置需要超级管理员权限，操作前请确保以超级管理员身份登录大模型平台管理端。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>系统设置</strong>。</p>
+</li>
+<li>
+<p>进入<strong>默认积分消耗规则</strong>页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-3-7044764a1c29ace6984f3cac1c9605a5.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>填写积分消耗规则。</p>
+<table><thead><tr><th><strong>模型类型</strong></th><th><strong>请求参数</strong></th></tr></thead><tbody><tr><td>文本对话</td><td><ul><li>输入（命中缓存）价格：价格单位为<code>积分/百万token</code>，缓存输入来自<code>OpenAI usage.prompt_tokens_details.cached_tokens</code>。</li><li>输入（未命中缓存）价格：价格单位为<code>积分/百万token</code>，基于<code>prompt_tokens - cached_tokens</code>计算。</li><li>输出价格：价格单位为<code>积分/百万token</code>。</li></ul></td></tr></tbody></table>
+</li>
+<li>
+<p>单击<strong>保存默认规则</strong>。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置默认模型存储目录">设置默认模型存储目录<a href="#设置默认模型存储目录" class="hash-link" aria-label="设置默认模型存储目录的直接链接" title="设置默认模型存储目录的直接链接" translate="no">​</a></h3>
+<p>预热模型时将模型文件传输至目标节点的默认模型存储目录，部署模型时从该目录挂载模型文件。</p>
+<blockquote>
+<p>注意：管理系统设置需要超级管理员权限，操作前请确保以超级管理员身份登录大模型平台管理端。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>系统设置</strong>。</p>
+</li>
+<li>
+<p>进入<strong>模型存储目录</strong>页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-4-4db634aa412cf22b141964322d51b786.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p>输入基础目录。</p>
+</li>
+<li>
+<p>单击<strong>保存存储目录</strong>。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置模型默认请求参数">设置模型默认请求参数<a href="#设置模型默认请求参数" class="hash-link" aria-label="设置模型默认请求参数的直接链接" title="设置模型默认请求参数的直接链接" translate="no">​</a></h3>
+<p>设置模型默认使用的请求参数。设置生效后，在新建模型时会自动填入默认的设置。</p>
+<blockquote>
+<p>注意：管理系统设置需要超级管理员权限，操作前请确保以超级管理员身份登录大模型平台管理端。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>系统设置</strong>。</p>
+</li>
+<li>
+<p>进入<strong>模型默认请求参数</strong>页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-5-aef92a1d018a1ec5a34f5a1cccdaf011.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>选择模型类型。</p>
+</li>
+<li>
+<p>填写默认使用的请求参数。</p>
+<table><thead><tr><th><strong>模型类型</strong></th><th><strong>请求参数</strong></th></tr></thead><tbody><tr><td>文本对话</td><td>通常用于文本对话、聊天问答：<ul><li>prompt：系统提示词。描述所需生成文本的文字提示词，是模型生成回复的依据，用于约束模型的角色设定、回答风格、输出格式等信息。</li><li>max_tokens：生成回复的最大token数量（包括输入和输出）。限制输出长度，避免过长或无意义的生成。</li><li>temperature：控制随机性/创造性，范围通常0~2。值越低输出越确定、连贯，值越高输出越多样、出人意料。</li><li>top_p：核心采样参数。模型仅从累积概率达到top_p的token集合中采样，值越小输出越保守，与temperature联合使用。</li></ul></td></tr></tbody></table>
+</li>
+<li>
+<p>单击<strong>保存默认参数</strong>。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置可用模型类型">设置可用模型类型<a href="#设置可用模型类型" class="hash-link" aria-label="设置可用模型类型的直接链接" title="设置可用模型类型的直接链接" translate="no">​</a></h3>
+<p>设置大模型平台允许使用的模型类型，即在大模型平台管理端创建或设置模型时允许选择的模型类型，以及在大模型平台用户端体验中心中显示的服务类型。</p>
+<blockquote>
+<p>注意：管理系统设置需要超级管理员权限，操作前请确保以超级管理员身份登录大模型平台管理端。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>系统设置</strong>。</p>
+</li>
+<li>
+<p>进入<strong>模型类型开关</strong>页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-6-7b52f7d482ef2bf22f1f74c483609823.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>选中允许使用的模型类型。</p>
+</li>
+<li>
+<p>单击<strong>保存模型类型</strong>。</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理鉴权">管理鉴权<a href="#管理鉴权" class="hash-link" aria-label="管理鉴权的直接链接" title="管理鉴权的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="配置云平台密钥">配置云平台密钥<a href="#配置云平台密钥" class="hash-link" aria-label="配置云平台密钥的直接链接" title="配置云平台密钥的直接链接" translate="no">​</a></h3>
+<p>云平台密钥用于跨平台申请使用算力资源。生成云平台密钥后，在大模型平台中添加即可跨平台使用当前租户的算力资源。</p>
+<ol>
+<li>
+<p>在算力调度平台获取云平台密钥。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>密钥管理</strong> &gt; <strong>API Key管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-7-51d77ee5d323891a74b3d581457cc1a0.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建API Key</strong>。</p>
+</li>
+<li>
+<p>输入云平台密钥的名称。</p>
+</li>
+<li>
+<p>单击<strong>复制</strong>，然后单击<strong>我已保存，关闭</strong>。</p>
+<blockquote>
+<p>说明：每个企业最多拥有一个云平台密钥，如需更改云平台密钥需要重新生成。请妥善保管云平台密钥，避免泄漏。</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-8-53f03e7fca0e80bdd8a3dac40a3daa4d.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+</ol>
+</li>
+<li>
+<p>在大模型平台添加云平台密钥。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>云平台密钥管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-9-4a200abbc90ac92aeab16dad29b8a5d2.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>添加一条</strong>。</p>
+</li>
+<li>
+<p>填写<strong>Base URL</strong>。</p>
+</li>
+<li>
+<p>填写复制的<strong>API Key</strong>。</p>
+</li>
+<li>
+<p>单击<strong>保存</strong>。</p>
+</li>
+<li>
+<p>云平台密钥添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>修改</strong>，修改当前云平台密钥的Base URL、API Key等信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前云平台密钥。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="配置ssh密钥">配置SSH密钥<a href="#配置ssh密钥" class="hash-link" aria-label="配置SSH密钥的直接链接" title="配置SSH密钥的直接链接" translate="no">​</a></h3>
+<p>SSH密钥标识本地设备，用于通过SSH方式将本地文件推送到大模型平台的模型仓库，或者将大模型平台中的模型仓库克隆到本地。</p>
+<ol>
+<li>
+<p>生成SSH密钥。</p>
+<ol>
+<li>
+<p>在终端，执行命令生成SSH密钥。</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p>复制公钥内容。</p>
+<blockquote>
+<p>说明：公钥内容通常保存在<code>~/.ssh/id_ed25519.pub</code>文件中。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p>添加SSH密钥。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>SSH Keys</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-10-8290060d50f47c1e9232cfa1242ffbe4.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>添加SSH密钥</strong>。</p>
+</li>
+<li>
+<p>填写密钥名称。</p>
+</li>
+<li>
+<p>填写复制的公钥内容。</p>
+</li>
+<li>
+<p>单击<strong>添加</strong>。</p>
+</li>
+<li>
+<p>SSH密钥添加成功后会显示在列表中。选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除添加的SSH密钥。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="配置access-token">配置Access Token<a href="#配置access-token" class="hash-link" aria-label="配置Access Token的直接链接" title="配置Access Token的直接链接" translate="no">​</a></h3>
+<p>Access Token实现HTTPS传输鉴权，用于通过HTTPS Git / Git LFS将本地文件推送到大模型平台的模型仓库，或者将大模型平台中的模型仓库克隆到本地。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>Access Token</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-15-4335b0a8c61bfd73686fe9ee14cce7f1.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Access Token</strong>页面显示了当前使用的Access Token，您可以按需管理。</p>
+<ul>
+<li>
+<p>单击显示图标，查看当前使用的Access Token。</p>
+</li>
+<li>
+<p>单击复制图标，复制当前使用的Access Token。</p>
+</li>
+<li>
+<p>单击<strong>刷新Token</strong>，重新生成Access Token。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理模型">管理模型<a href="#管理模型" class="hash-link" aria-label="管理模型的直接链接" title="管理模型的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="创建模型仓库">创建模型仓库<a href="#创建模型仓库" class="hash-link" aria-label="创建模型仓库的直接链接" title="创建模型仓库的直接链接" translate="no">​</a></h3>
+<p>大模型平台通过模型仓库管理模型元数据、模型默认请求参数、模型文件、模型版本等模型相关的信息。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>我的模型</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-16-39e27857bf9ad1dacba23b3ad1391f4c.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>新建模型</strong>。</p>
+</li>
+<li>
+<p>填写模型基本信息。</p>
+<ul>
+<li>
+<p>所有者：模型仓库的所有者。</p>
+</li>
+<li>
+<p>模型名称：源模型路径和部署调用的标识，用于确定模型版本和权限归属等信息，完成计量、路由分发等任务。同一个部署者不能重复部署相同名称的模型，从而确保部署的唯一性。</p>
+</li>
+<li>
+<p>可见性：公开模型所有管理员均可以部署，私有模型仅模型所有者和超级管理员可以部署。</p>
+</li>
+<li>
+<p>License：标记模型文件和权重的使用许可来源，不同的License针对模型的许可范围存在差异，例如是否可以商用、再分发、二次训练。</p>
+</li>
+<li>
+<p>模型介绍：简要介绍模型的用途、能力边界、使用场景、注意事项等信息。</p>
+</li>
+<li>
+<p>运行时模型标识：标识每个实际运行的模型实例，是模型的运行时标识，用于平台内部资源管理，锁定单次请求的执行过程，完成状态管理、链路追踪、流式输出控制等任务。</p>
+</li>
+<li>
+<p>模型类型：大模型平台为不同模型类型设计了相应的用户端体验页面，同时模型类型也决定了调用模型服务时采用的协议类型，文本、生图、语音等模型服务均有各自的通信接口标准。</p>
+</li>
+<li>
+<p>默认请求参数（可选）：调用模型服务时的默认填入的请求参数，例如文本对话模型的默认请求参数prompt、max_tokens、temperature等，自定义请求参数可以覆盖默认请求参数。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>填写模型使用配置。</p>
+<ul>
+<li>
+<p>部署镜像地址：部署模型时使用的容器镜像地址，留空则使用系统默认的推理镜像。</p>
+</li>
+<li>
+<p>启动命令：创建模型容器后，在容器内启动推理服务的命令，支持将占位符替换为对应的参数。</p>
+<ul>
+<li>
+<p><code>{MODEL_DIR}</code>：模型文件所在目录。</p>
+</li>
+<li>
+<p><code>{MODEL_NAME}</code>：模型名称。</p>
+</li>
+<li>
+<p><code>{PORT}</code>：提供推理服务的端口。</p>
+</li>
+<li>
+<p><code>{DEVICES}</code>：部署模型时占用的AI加速设备列表。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>积分消耗规则（可选）：计量调用模型时消耗积分的规则，例如文本对话服务分别配置输入（命中缓存）价格、输入（未命中缓存）价格、输出价格，生图服务配置生成一张图片的价格。如果未自定义积分消耗规则，则采用系统设置中的默认积分消耗规则。</p>
+</li>
+<li>
+<p>初始化选项：选择是否需要自动初始化README.md和.gitattributes。README.md包含模型License等信息，<code>.gitattributes</code>包LFS配置等信息。如果您计划后续手动推送本地文件夹，建议不要选择自动初始化，避免出现冲突。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>创建模型</strong>。</p>
+</li>
+<li>
+<p>模型仓库创建成功后会显示<strong>我的模型</strong>和<strong>全部模型/可部署模型</strong>页面中，您可以按需管理。单击模型卡片进入模型详情页面，完成上传文件、预热模型、部署模型等操作。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="查看模型仓库">查看模型仓库<a href="#查看模型仓库" class="hash-link" aria-label="查看模型仓库的直接链接" title="查看模型仓库的直接链接" translate="no">​</a></h3>
+<p>查看模型仓库的详细信息，了解模型的使用状态。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>我的模型</strong>或者<strong>全部模型/可部署模型</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-17-44e22cae6d76b3110df96cb1f0507747.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>模型仓库列表中展示了模型名称、模型可见性、模型所有者等信息，您也可以单击卡片查看更多信息。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-18-8658a080f9eca956f36aee6f88be3f5b.png" width="1280" height="561" class="img_ev3q"></p>
+</li>
+<li>
+<p>模型仓库详情包括模型介绍、版本管理等信息以及上传下载、预热、部署、观测等操作的入口，您可以按需管理。</p>
+<ul>
+<li>
+<p><strong>介绍</strong>页面：从模型仓库的README.md文件提取内容并展示。</p>
+</li>
+<li>
+<p><strong>文件</strong>页面：完成上传模型文件、管理模型版本等操作。</p>
+</li>
+<li>
+<p><strong>部署</strong>页面：前往<strong>预热管理</strong>页面完成模型预热操作，前往<strong>部署管理</strong>页面完成模型部署操作。</p>
+</li>
+<li>
+<p><strong>设置</strong>页面：按需修改模型的基本信息或者使用配置，或者删除当前模型仓库。</p>
+<blockquote>
+<p>说明：模型标签从README.md文件YAML元数据的提取，模型名称只可在创建模型仓库时指定。</p>
+</blockquote>
+</li>
+<li>
+<p>单击<strong>刷新</strong>，查看最新的模型信息。</p>
+</li>
+<li>
+<p>单击<strong>下载</strong>，获取当前模型的下载命令，支持HTTPS和SSH方式下载。</p>
+</li>
+<li>
+<p>单击<strong>查看模型观测</strong>，观测当前模型的调用过程指标，了解模型健康度、性能等方面的表现。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="上传模型文件">上传模型文件<a href="#上传模型文件" class="hash-link" aria-label="上传模型文件的直接链接" title="上传模型文件的直接链接" translate="no">​</a></h3>
+<p>大模型平台支持通过网页或者Git上传模型文件。</p>
+<p>通过网页上传模型文件。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>我的模型</strong>。</p>
+</li>
+<li>
+<p>单击模型卡片。</p>
+</li>
+<li>
+<p>进入<strong>文件</strong>页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-19-31aa65cbda7669c7e298632a1b9c2cc6.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>选择上传模型文件的分支。</p>
+</li>
+<li>
+<p>单击<strong>添加文件</strong>。</p>
+</li>
+<li>
+<p>单击<strong>选择文件</strong>，然后从本地选中并打开文件。</p>
+<blockquote>
+<p>说明：目前网页上传单次只能上传一个文件，如果需要上传大量文件，建议采用Git方式。</p>
+</blockquote>
+</li>
+<li>
+<p>填写本次提交文件的备注信息。</p>
+</li>
+<li>
+<p>单击<strong>Upload</strong>。</p>
+</li>
+<li>
+<p>文件上传完成后，单击<strong>提交历史</strong>可查看上传记录。</p>
+</li>
+</ol>
+<p>通过Git上传模型文件。</p>
+<ol>
+<li>
+<p>将模型仓库克隆到本地。</p>
+<blockquote>
+<p>注意：克隆前请确保已将本地设备的SSH密钥添加至大模型平台。</p>
+</blockquote>
+<ul>
+<li>
+<p>在大模型平台管理端左侧，选择<strong>我的模型</strong>。</p>
+</li>
+<li>
+<p>单击模型卡片。</p>
+</li>
+<li>
+<p>单击<strong>下载</strong>，然后复制HTTPS或SSH的下载地址。</p>
+</li>
+<li>
+<p>在本地终端执行下载命令。以SSH为例：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ git clone ssh://git@modelgit.cloud.streamcomputing.cn:32222/models/admin/Qwen2-7B-Instruct.git</span><br></span></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li>
+<p>将模型文件复制到模型文件夹。</p>
+</li>
+<li>
+<p>编写README.md文件。</p>
+</li>
+<li>
+<p>将模型文件夹的内容推送到大模型平台。</p>
+<ul>
+<li>
+<p>首次全量推送示例：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ git init --initial-branch=main</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git remote add origin ssh://git@modelgit.cloud.streamcomputing.cn:32222/models/admin/Qwen2-7B-Instruct.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git lfs install</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git lfs track &quot;*.bin&quot; &quot;*.vmfb&quot; &quot;*.safetensors&quot; &quot;*.pt&quot; &quot;*.pth&quot; &quot;*.onnx&quot; &quot;*.ckpt&quot; &quot;*.h5&quot; &quot;*.tar&quot; &quot;*.tar.gz&quot; &quot;*.zip&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git add .gitattributes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git add .</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git commit -m &quot;Initial commit&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git push -u origin main</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p>修改文件后推送，以修改README.md文件为例：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ git add .</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git commit -m &quot;Modify README.md&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ git push -u origin main</span><br></span></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li>
+<p>文件上传完成后，回到模型的<strong>文件</strong>页面，单击<strong>提交历史</strong>可查看上传记录。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="预热模型">预热模型<a href="#预热模型" class="hash-link" aria-label="预热模型的直接链接" title="预热模型的直接链接" translate="no">​</a></h3>
+<p>大模型平台提供模型预热功能，提前将模型文件传输到持久化存储中，方便在部署时直接挂载使用，加速部署过程。同一个模型预热一次即可用于多次部署，在模型尺寸较大时可以有效加速部署速度。</p>
+<blockquote>
+<p>注意：预热和部署模型都需要基于算力调度平台中的资源，因此在操作前请确保已在算力调度平台（云平台密钥对应的租户账号）中创建项目和环境，且已挂载足以容纳模型文件的持久化存储。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>预热管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-20-7f7b182d99d3cb7375772d55b506d3d2.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>新建预热</strong>。</p>
+</li>
+<li>
+<p>填写预热模型的信息。</p>
+<ul>
+<li>
+<p>源模型：选择需要预热的模型。</p>
+</li>
+<li>
+<p>部署归属用户：选择部署模型时所归属的用户。</p>
+</li>
+<li>
+<p>项目：选择预热模型时所归属的项目，便于统一管理模型和应用。</p>
+</li>
+<li>
+<p>环境：选择预热模型时使用的环境，其中分配了CPU、内存、AI加速卡等算力资源。</p>
+</li>
+<li>
+<p>预热目录：预热模型时存放模型文件的目录，选择源模型后自动生成默认预热目录，您也可以自定义预热目录，但必须放置在系统设置的模型存储基础目录下，例如基础目录为<code>/data/model-preheats/models/</code>，默认预热目录为<code>/data/model-preheats/models/admin/Qwen2-7B-Instruct</code>。</p>
+</li>
+<li>
+<p>目标节点：选择预热模型时所在的目标节点。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>预热创建成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>单击<strong>详情</strong>，查看当前预热的详细信息。</p>
+</li>
+<li>
+<p>单击<strong>删除</strong>，删除当前预热。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="部署模型">部署模型<a href="#部署模型" class="hash-link" aria-label="部署模型的直接链接" title="部署模型的直接链接" translate="no">​</a></h3>
+<p>部署模型提供推理服务，部署成功后可以在大模型平台用户端体验中心或者调用模型API接入推理服务。</p>
+<blockquote>
+<p>注意：预热和部署模型都需要基于算力调度平台中的资源，因此在操作前请确保已在算力调度平台（云平台密钥对应的租户账号）中创建项目和环境，且已挂载足以容纳模型文件的持久化存储。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>部署管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-21-079ad8c24503cc296cfe88e50c8745e1.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>新建部署</strong>。</p>
+</li>
+<li>
+<p>填写部署模型的信息。</p>
+<ul>
+<li>
+<p>源模型：选择需要部署的模型。</p>
+</li>
+<li>
+<p>归属用户：选择部署模型时所归属的用户。</p>
+</li>
+<li>
+<p>项目：选择部署模型时所归属的项目，便于统一管理模型和应用。</p>
+</li>
+<li>
+<p>环境：选择模型运行时使用的环境，其中分配了CPU、内存、AI加速卡等算力资源。</p>
+</li>
+<li>
+<p>部署名称：部署模型时使用的模型标识，用于调用模型服务，例如Qwen2-7B-Instruct-deploy。</p>
+</li>
+<li>
+<p>镜像地址：创建模型容器时使用的镜像地址。</p>
+</li>
+<li>
+<p>启动命令：创建模型容器后，在容器内启动推理服务的命令，支持将占位符替换为对应的参数。</p>
+</li>
+<li>
+<p>AI加速卡：设置模型运行所需的资源，包括加速卡类型（NPU/GPU）、加速卡数量、CPU数量、内存大小。</p>
+</li>
+<li>
+<p>节点：如果已经预热模型，会自动列出目标节点。请按需选择模型容器运行的目标节点，部署时对应的预热目录会自动挂载到模型容器。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>部署创建成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>单击<strong>用量</strong>，查看当前部署的调用记录，包含调用时间、调用方、token用量、积分消耗等信息。</p>
+</li>
+<li>
+<p>单击<strong>观测</strong>，查看当前部署的请求数量、耗时以及质量趋势。</p>
+</li>
+<li>
+<p>单击<strong>详情</strong>，查看当前部署的详情，包括模型信息、部署者信息、项目信息、使用资源的信息、节点信息等。</p>
+</li>
+<li>
+<p>单击<strong>取消</strong>，停用当前部署。</p>
+</li>
+<li>
+<p>单击<strong>删除</strong>，删除当前部署。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理积分">管理积分<a href="#管理积分" class="hash-link" aria-label="管理积分的直接链接" title="管理积分的直接链接" translate="no">​</a></h2>
+<p>积分用于计量模型调用消耗，由超级管理员手动增加。积分消耗规则分为系统默认规则和模型自定义规则，分别在系统设置和模型设置中设定。</p>
+<blockquote>
+<p>注意：为用户增加积分需要超级管理员权限，管理员和普通用户只能查看积分余额或增加/消耗记录。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>积分管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-22-a1f0bc352342eb3e8e2e372629376549.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>积分管理</strong>页面分区展示了充值记录和消耗记录，支持按用户和时间范围筛选，您可以按需管理。</p>
+<ul>
+<li>
+<p>在充值记录区域选择用户，筛选该用户的充值记录。</p>
+</li>
+<li>
+<p>在消耗记录区域选择用户，筛选该用户的消耗记录。单击<strong>去调用统计</strong>，查看积分消耗对应的详细模型调用记录。</p>
+</li>
+<li>
+<p>单击为<strong>用户增加积分</strong>，选择用户并输入积分值，然后单击<strong>确认增加</strong>。在充值记录区域确认出现充值记录条目，则代表积分充值成功。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="查看信息记录">查看信息记录<a href="#查看信息记录" class="hash-link" aria-label="查看信息记录的直接链接" title="查看信息记录的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="观测模型表现">观测模型表现<a href="#观测模型表现" class="hash-link" aria-label="观测模型表现的直接链接" title="观测模型表现的直接链接" translate="no">​</a></h3>
+<p>观测模型的调用过程指标，了解模型健康度、性能等方面的表现。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>模型观测</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-23-84d5deeeca0e71e0650445fc9cb8ba4a.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>模型观测</strong>页面默认展示活跃模型、异常模型和最近请求，您也可以按需筛选展示的信息。</p>
+<ol>
+<li>
+<p>选择模型。</p>
+</li>
+<li>
+<p>选择时间范围。</p>
+</li>
+<li>
+<p>选择状态类型。</p>
+</li>
+<li>
+<p>单击<strong>查看</strong>。</p>
+<ul>
+<li>
+<p>在请求记录区域查看请求数量、耗时以及质量趋势。</p>
+</li>
+<li>
+<p>在Trace列表区域查看请求链路详情，排查性能问题。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="查看调用记录">查看调用记录<a href="#查看调用记录" class="hash-link" aria-label="查看调用记录的直接链接" title="查看调用记录的直接链接" translate="no">​</a></h3>
+<p>查看模型的调用方、调用次数、积分消耗等信息，汇总和计量模型使用情况。</p>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>调用统计</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-24-f38e503e5cb8e19ec15c75fc02fec5d7.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>调用统计</strong>页面支持查看调用流水和按天统计调用情况，您也可以按需筛选展示的信息。</p>
+<ol>
+<li>
+<p>选择模型类型和模型。</p>
+</li>
+<li>
+<p>选择用户。</p>
+</li>
+<li>
+<p>选择时间范围。</p>
+</li>
+<li>
+<p>选择计量类型。</p>
+</li>
+<li>
+<p>查看调用记录，调用记录包含了调用时间、调用方、token用量、积分消耗等信息。单击<strong>查看Trace</strong>，查看请求链路详情，排查性能问题。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="查看平台操作日志">查看平台操作日志<a href="#查看平台操作日志" class="hash-link" aria-label="查看平台操作日志的直接链接" title="查看平台操作日志的直接链接" translate="no">​</a></h3>
+<p>大模型平台实时记录并展示操作的详细日志，方便您对操作行为进行审计，满足审计追溯和系统合规的需求。</p>
+<blockquote>
+<p>注意：查看平台操作日志需要超级管理员权限，操作前请确保以超级管理员身份登录大模型平台管理端。</p>
+</blockquote>
+<ol>
+<li>
+<p>在大模型平台管理端左侧，单击<strong>操作审计</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/大模型平台使用指南（模型管理员）-image-25-614bf833d7719221aca01c788e0368f6.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>操作审计</strong>页面按时间倒序展示最近的操作。单击<strong>查看</strong>，查看当前操作日志的原始消息。</p>
+</li>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/智算云平台/算力调度平台使用指南（租户用户）"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">算力调度平台使用指南（租户用户）</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/智算云平台/大模型平台使用指南（模型用户）"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">大模型平台使用指南（模型用户）</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#准备工作" class="table-of-contents__link toc-highlight">准备工作</a></li><li><a href="#典型使用流程" class="table-of-contents__link toc-highlight">典型使用流程</a></li><li><a href="#登录大模型平台管理端" class="table-of-contents__link toc-highlight">登录大模型平台管理端</a></li><li><a href="#管理账号" class="table-of-contents__link toc-highlight">管理账号</a></li><li><a href="#管理用户" class="table-of-contents__link toc-highlight">管理用户</a></li><li><a href="#管理系统设置" class="table-of-contents__link toc-highlight">管理系统设置</a><ul><li><a href="#设置积分赠送规则" class="table-of-contents__link toc-highlight">设置积分赠送规则</a></li><li><a href="#设置积分消耗规则" class="table-of-contents__link toc-highlight">设置积分消耗规则</a></li><li><a href="#设置默认模型存储目录" class="table-of-contents__link toc-highlight">设置默认模型存储目录</a></li><li><a href="#设置模型默认请求参数" class="table-of-contents__link toc-highlight">设置模型默认请求参数</a></li><li><a href="#设置可用模型类型" class="table-of-contents__link toc-highlight">设置可用模型类型</a></li></ul></li><li><a href="#管理鉴权" class="table-of-contents__link toc-highlight">管理鉴权</a><ul><li><a href="#配置云平台密钥" class="table-of-contents__link toc-highlight">配置云平台密钥</a></li><li><a href="#配置ssh密钥" class="table-of-contents__link toc-highlight">配置SSH密钥</a></li><li><a href="#配置access-token" class="table-of-contents__link toc-highlight">配置Access Token</a></li></ul></li><li><a href="#管理模型" class="table-of-contents__link toc-highlight">管理模型</a><ul><li><a href="#创建模型仓库" class="table-of-contents__link toc-highlight">创建模型仓库</a></li><li><a href="#查看模型仓库" class="table-of-contents__link toc-highlight">查看模型仓库</a></li><li><a href="#上传模型文件" class="table-of-contents__link toc-highlight">上传模型文件</a></li><li><a href="#预热模型" class="table-of-contents__link toc-highlight">预热模型</a></li><li><a href="#部署模型" class="table-of-contents__link toc-highlight">部署模型</a></li></ul></li><li><a href="#管理积分" class="table-of-contents__link toc-highlight">管理积分</a></li><li><a href="#查看信息记录" class="table-of-contents__link toc-highlight">查看信息记录</a><ul><li><a href="#观测模型表现" class="table-of-contents__link toc-highlight">观测模型表现</a></li><li><a href="#查看调用记录" class="table-of-contents__link toc-highlight">查看调用记录</a></li><li><a href="#查看平台操作日志" class="table-of-contents__link toc-highlight">查看平台操作日志</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">希姆计算</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.streamcomputing.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">希姆计算官网<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://streamcomputing.feishu.cn/docx/Bs9mdQYn3o2nbOxoP1ZcTR0fnRd" target="_blank" rel="noopener noreferrer" class="footer__link-item">联系我们<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">开源</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/riscv-stc/riscv-matrix-project" target="_blank" rel="noopener noreferrer" class="footer__link-item">自研AI计算矩阵扩展指令集<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Stream-Computing/STCPaddleModelZoo" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度飞桨 x 希姆计算AI模型库<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">资源</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/AI加速卡/希姆计算术语表">希姆计算术语表</a></li><li class="footer__item"><a href="https://riscv.org/members/" target="_blank" rel="noopener noreferrer" class="footer__link-item">RISC-V International<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 广州希姆半导体科技有限公司Stream Computing Inc.</div></div></div></footer></div>
+</body>
+</html>
