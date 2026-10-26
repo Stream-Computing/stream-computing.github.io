@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-pageAICloud docs-version-current docs-doc-page docs-doc-id-算力调度平台使用指南（租户管理员）" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">算力调度平台使用指南（租户管理员） | 希姆计算文档中心</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/智算云平台/next/算力调度平台使用指南（租户管理员）"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-pageAICloud-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-pageAICloud-current"><meta data-rh="true" property="og:title" content="算力调度平台使用指南（租户管理员） | 希姆计算文档中心"><meta data-rh="true" name="description" content="准备工作"><meta data-rh="true" property="og:description" content="准备工作"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/智算云平台/next/算力调度平台使用指南（租户管理员）"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/智算云平台/next/算力调度平台使用指南（租户管理员）" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/智算云平台/next/算力调度平台使用指南（租户管理员）" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"算力调度平台使用指南（租户管理员）","item":"https://your-docusaurus-site.example.com/智算云平台/next/算力调度平台使用指南（租户管理员）"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="希姆计算文档中心 RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="希姆计算文档中心 Atom Feed"><link rel="stylesheet" href="/assets/css/styles.7b2fe869.css">
+<script src="/assets/js/runtime~main.bbf7e831.js" defer="defer"></script>
+<script src="/assets/js/main.ae248eab.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/stc_logo.svg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/stc_logo.svg" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/stc_logo.svg" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">STC Docs Hub</b></a><a class="navbar__item navbar__link" href="/AI加速卡/category/硬件产品手册">AI加速卡</a><div class="navbar__item dropdown dropdown--hoverable"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/AI加速卡/硬件产品手册/STCP950L产品手册">v1.12.1</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/AI加速卡/硬件产品手册/STCP950L产品手册">v1.12.1</a></li><li><a class="dropdown__link" href="/AI加速卡/1.12.0/硬件产品手册/STCP950L产品手册">v1.12.0</a></li><li><a class="dropdown__link" href="/AI加速卡/1.11.0/硬件产品手册/STCP950L产品手册">v1.11.0</a></li><li><a class="dropdown__link" href="/AI加速卡/1.10.0/希姆计算术语表">v1.10.0</a></li><li><a class="dropdown__link" href="/AI加速卡/1.9.0/希姆计算术语表">v1.9.0</a></li></ul></div><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/智算云平台/next/希姆云平台产品简介">智算云平台</a><a class="navbar__item navbar__link" href="/智算云平台/算力调度平台使用指南（租户管理员）">v3.0.0</a><a class="navbar__item navbar__link" href="/芯周通用智能体/芯周通用智能体使用指南">芯周通用智能体</a><a class="navbar__item navbar__link" href="/芯周通用智能体/芯周通用智能体使用指南">v0.2.7</a><a class="navbar__item navbar__link" href="/TAX编译智能体/TAX编译智能体使用指南（Web工作台）">TAX编译智能体</a><a class="navbar__item navbar__link" href="/TAX编译智能体/TAX编译智能体使用指南（Web工作台）">v1.0.3</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/next/希姆云平台产品简介"><span title="希姆云平台产品简介" class="linkLabel_WmDU">希姆云平台产品简介</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/next/云管平台使用指南（系统管理员）"><span title="云管平台使用指南（系统管理员）" class="linkLabel_WmDU">云管平台使用指南（系统管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/next/设备管理系统使用指南（系统管理员）"><span title="设备管理系统使用指南（系统管理员）" class="linkLabel_WmDU">设备管理系统使用指南（系统管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link menu__link--active" aria-current="page" href="/智算云平台/next/算力调度平台使用指南（租户管理员）"><span title="算力调度平台使用指南（租户管理员）" class="linkLabel_WmDU">算力调度平台使用指南（租户管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/next/算力调度平台使用指南（租户用户）"><span title="算力调度平台使用指南（租户用户）" class="linkLabel_WmDU">算力调度平台使用指南（租户用户）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/next/大模型平台使用指南（模型管理员）"><span title="大模型平台使用指南（模型管理员）" class="linkLabel_WmDU">大模型平台使用指南（模型管理员）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item green"><a class="menu__link" href="/智算云平台/next/大模型平台使用指南（模型用户）"><span title="大模型平台使用指南（模型用户）" class="linkLabel_WmDU">大模型平台使用指南（模型用户）</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="theme-doc-version-banner alert alert--warning margin-bottom--md" role="alert"><div>此为 <!-- -->希姆计算文档中心<!-- --> <b>Next</b> 版尚未发行的文档。</div><div class="margin-top--md">最新的文档请参阅 <b><a href="/智算云平台/算力调度平台使用指南（租户管理员）">最新版本</a></b> (<!-- -->3.0.0<!-- -->)。</div></div><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">算力调度平台使用指南（租户管理员）</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">版本：Next</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>算力调度平台使用指南（租户管理员）</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="准备工作">准备工作<a href="#准备工作" class="hash-link" aria-label="准备工作的直接链接" title="准备工作的直接链接" translate="no">​</a></h2>
+<ul>
+<li>
+<p>确认希姆云平台已部署完毕，能够正常访问登录页面。</p>
+</li>
+<li>
+<p>确认云管平台系统管理员已创建租户且租户状态正常。</p>
+</li>
+<li>
+<p>获取算力调度平台租户管理员账号和密码。</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="典型使用流程">典型使用流程<a href="#典型使用流程" class="hash-link" aria-label="典型使用流程的直接链接" title="典型使用流程的直接链接" translate="no">​</a></h2>
+<p>租户管理员规划和使用租户资源的典型流程如下：</p>
+<ol>
+<li>
+<p>使用租户管理员账号和密码登录算力调度平台。</p>
+</li>
+<li>
+<p>创建租户用户的组织架构。</p>
+</li>
+<li>
+<p>创建应用环境并分配可用算力资源。</p>
+</li>
+<li>
+<p>创建项目。</p>
+</li>
+<li>
+<p>创建应用并添加资源需求。</p>
+</li>
+<li>
+<p>部署或卸载应用。</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="登录算力调度平台">登录算力调度平台<a href="#登录算力调度平台" class="hash-link" aria-label="登录算力调度平台的直接链接" title="登录算力调度平台的直接链接" translate="no">​</a></h2>
+<p>算力调度平台根据租户管理员、租户用户等类型账号提供角色对应的操作页面，从而提升操作效率与安全性。</p>
+<ol>
+<li>
+<p>访问希姆云平台登录页面。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-13-183bdaa47ed24f37ee7dddeeda8a41f1.png" width="1280" height="598" class="img_ev3q"></p>
+</li>
+<li>
+<p>输入租户管理员账号和密码。</p>
+<blockquote>
+<p>注意：创建租户后，云管平台默认为租户创建一个租户管理员账号，账号名称为租户电话，密码则需要自行修改，具体步骤，请参见<em>云管平台使用指南（系统管理员）</em> &gt; <em>管理租户要素</em>中租户用户相关的操作。</p>
+</blockquote>
+</li>
+<li>
+<p>输入验证码。</p>
+</li>
+<li>
+<p>单击<strong>登录</strong>。</p>
+<blockquote>
+<p>注意：创建租户时，如果云管平台系统管理员没有为租户分配任何产品权限，会无法在算力调度平台登录租户管理员账号。这时请联系云管平台系统管理员授予访问产品功能的权限，例如我的空间、监控观测等。</p>
+</blockquote>
+</li>
+<li>
+<p>单击<strong>算力调度平台</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-12-b1003d78e227dd96c0c2d8340b12016b.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>查看<strong>系统概览</strong>页面的信息，全方位了解当前租户的可用算力资源及其应用资源。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-14-bf671255ce60b379db3a4ad6b4288c65.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理企业设置">管理企业设置<a href="#管理企业设置" class="hash-link" aria-label="管理企业设置的直接链接" title="管理企业设置的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="管理企业要素">管理企业要素<a href="#管理企业要素" class="hash-link" aria-label="管理企业要素的直接链接" title="管理企业要素的直接链接" translate="no">​</a></h3>
+<p>算力调度平台通过权限管理与组织架构模块实现精细化管控和多模块协同，确保权限精准分配、组织有序运转，提升平台管理效率与安全性。</p>
+<p>管理企业要素时涉及功能模块、组织、角色、用户相关的操作，本章节的步骤设计旨在帮助您熟悉可能存在的顺序要求，例如创建租户用户时需要选择已经创建的组织和角色。</p>
+<ol>
+<li>
+<p>管理租户功能模块。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>权限管理</strong> &gt; <strong>功能权限</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-0c5489b012f59dfe43ccf1a61f6167f7.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>功能权限</strong>页面显示了租户级别的产品功能列表，您可以按需管理。</p>
+<blockquote>
+<p>说明：租户可用的产品功能由系统管理员在云管平台添加，在算力调度平台中仅可查看和编辑已有产品功能。</p>
+</blockquote>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>下移</strong>，将当前产品功能顺序向下移动，但是不改变产品功能的层级。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>上移</strong>，将当前产品功能顺序向上移动，但是不改变产品功能的层级。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>修改名称</strong>，修改当前产品功能的名称。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>管理租户组织。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>组织架构</strong> &gt; <strong>组织管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-1-cddbae7cadc378e73a91ace3fed6df04.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写组织的信息。</p>
+<ul>
+<li>
+<p>填写必选信息：组织名称、组织编码。</p>
+</li>
+<li>
+<p>填写可选信息：组织备注。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>组织添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>添加子组织</strong>，为当前组织添加子组织。例如添加研发部、市场部作为一级组织，添加前端1队、销售区域1队作为子组织。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前组织的信息。不支持修改组织编码。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前组织。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>管理租户角色。角色通过绑定资源获得使用指定功能模块，用户通过绑定角色获得对应的权限，方便为担任相同职能的多名用户赋予一致的权限。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>权限管理</strong> &gt; <strong>角色管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-2-68400555f8548298bef5f52adf97dbcb.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写角色的信息。</p>
+<ul>
+<li>
+<p>填写必选信息：角色名称、角色编码。</p>
+</li>
+<li>
+<p>填写可选信息：所在组织、角色备注。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>角色添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>在左侧组织列表中单击组织名称，显示组织下的角色。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前角色的信息。不支持修改角色编码。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>绑定资源</strong>，为当前角色选择可以访问的页面。</p>
+<blockquote>
+<p>注意：至少需要分配一个产品权限，否则分配该角色的租户用户无法登录算力调度平台。</p>
+</blockquote>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前角色。不支持删除系统管理员和默认角色。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>管理租户用户。角色通过绑定资源获得使用指定功能模块，用户通过绑定角色获得对应的权限，方便为担任相同职能的多名用户赋予一致的权限。</p>
+<blockquote>
+<p>注意：创建租户后，云管平台默认为租户创建一个租户管理员账号，账号名称为租户电话，密码则需要自行修改，具体步骤，请参见<em>云管平台使用指南（系统管理员）</em> &gt; <em>管理租户要素</em>中租户用户相关的操作。</p>
+</blockquote>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>组织架构</strong> &gt; <strong>用户管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-3-547e60915b1d89c4a9770dc08f931f58.png" width="1280" height="560" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写用户的信息。</p>
+<ul>
+<li>
+<p>填写必选信息：账号、密码、手机、姓名、所属组织。</p>
+</li>
+<li>
+<p>填写可选信息：角色。如果不选择角色，将分配默认角色。</p>
+<blockquote>
+<p>注意：您需要为默认角色至少需要分配一个产品权限，否则分配默认角色的租户用户无法登录算力调度平台。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>用户添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>在左侧组织列表中单击组织名称，显示组织下的用户。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前用户的信息。不支持修改账号。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>详情</strong>，查看当前用户的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>修改密码</strong>，为当前用户修改登录密码。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>绑定角色</strong>，为当前用户绑定租户角色以获得相应的权限。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前用户。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="查看审计日志">查看审计日志<a href="#查看审计日志" class="hash-link" aria-label="查看审计日志的直接链接" title="查看审计日志的直接链接" translate="no">​</a></h3>
+<p>算力调度平台实时记录并展示租户内操作的详细日志，方便您对操作行为进行审计，满足审计追溯和系统合规的需求。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>操作审计</strong> &gt; <strong>审计日志</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-4-f3dc3257d61cac2685d27890f0a5be9e.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>企业日志</strong>页面显示了租户级别的资源操作日志列表。选择 <strong>⋮</strong> &gt; <strong>详情</strong>，查看操作的详细信息，包括执行人、操作类型、操作对象、原始数据等信息。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="查看算力资源">查看算力资源<a href="#查看算力资源" class="hash-link" aria-label="查看算力资源的直接链接" title="查看算力资源的直接链接" translate="no">​</a></h3>
+<p>算力调度平台中展示分配给当前租户的算力池列表以及算力池的实时状态，助力企业合理调配算力资源。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>算力管理</strong> &gt; <strong>算力资源</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-5-439f0aac77a5c3a894e66b1ce3c783d2.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>算力池管理</strong>页面显示了分配给当前租户的算力池列表。选择 <strong>⋮</strong> &gt; <strong>详情</strong>，查看算力池的详细信息，包括算力池所属集群、资源总量、节点信息、可分配资源等信息。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="管理云平台密钥">管理云平台密钥<a href="#管理云平台密钥" class="hash-link" aria-label="管理云平台密钥的直接链接" title="管理云平台密钥的直接链接" translate="no">​</a></h3>
+<p>云平台密钥用于跨平台申请使用算力资源。生成云平台密钥后，在大模型平台中添加即可跨平台使用当前租户的算力资源。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>企业设置</strong> &gt; <strong>密钥管理</strong> &gt; <strong>API Key管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-6-51d77ee5d323891a74b3d581457cc1a0.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建API Key</strong>。</p>
+</li>
+<li>
+<p>输入云平台密钥的名称。</p>
+</li>
+<li>
+<p>单击<strong>复制</strong>，然后单击<strong>我已保存，关闭</strong>。</p>
+<blockquote>
+<p>说明：每个企业最多拥有一个云平台密钥，如需更改云平台密钥需要重新生成。请妥善保管云平台密钥，避免泄漏。</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-7-53f03e7fca0e80bdd8a3dac40a3daa4d.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>云平台密钥添加成功后会显示在<strong>API Key管理</strong>页面中，您可以按需管理。</p>
+<ul>
+<li>
+<p>单击<strong>显示</strong>，查看云平台密钥。</p>
+</li>
+<li>
+<p>单击<strong>复制</strong>，复制云平台密钥。</p>
+</li>
+<li>
+<p>单击<strong>重新生成</strong>，重新生成云平台密钥。如果云平台密钥泄漏，请立即重新生成和绑定，避免算力资源被盗用。</p>
+</li>
+<li>
+<p>单击<strong>删除</strong>，删除云平台密钥。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理研发资源">管理研发资源<a href="#管理研发资源" class="hash-link" aria-label="管理研发资源的直接链接" title="管理研发资源的直接链接" translate="no">​</a></h2>
+<p>算力调度平台通过研发资源实现资源、项目和应用的一体化管理，研发资源包括应用环境、项目、镜像、应用。本章节的步骤设计旨在帮助您熟悉可能存在的顺序要求，例如应用必须属于一个项目、基于一个应用环境。</p>
+<blockquote>
+<p>说明：云管平台中可以查看租户中已创建的应用环境、项目、业务应用，但没有管理权限。</p>
+</blockquote>
+<ol>
+<li>
+<p>创建应用环境。租户内的应用环境基于分配给租户的算力池进行更细粒度的资源分配，以满足租户内业务应用的资源需求，助力企业构建稳定、适配的研发环境，为企业研发运营提供坚实支撑。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>研发管理</strong> &gt; <strong>环境管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-8-ebec655fdd39732e579a767898cceee3.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写基本信息，包括中文名称、英文名称、备注。</p>
+</li>
+<li>
+<p>选择资源池。选择后自动填充该资源池的资源池编码、资源总量、资源余额信息。</p>
+</li>
+<li>
+<p>填写配额信息，包括CPU、内存、分布式存储（分布式存储集群提供的存储资源）、NPU、GPU的配额。</p>
+</li>
+<li>
+<p>填写网络配置，包括是否开启网络隔离、是否开启环境网关。</p>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>环境创建添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>详情</strong>，查看当前环境的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前环境的名称、配额等信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前环境。</p>
+<blockquote>
+<p>注意：如果已经在当前环境部署了应用，在删除环境前需要先卸载应用资源并删除应用，否则无法删除环境。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="9">
+<li>
+<p>添加环境成员。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>详情</strong>。</p>
+</li>
+<li>
+<p>单击<strong>环境成员</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-9-43d3d34572455547087342f466877494.png" width="1280" height="556" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>新建</strong>。</p>
+</li>
+<li>
+<p>选择已创建的租户用户，选择赋予该租户用户的项目角色，并填写必要的备注。</p>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>创建项目。以项目的形式组织应用和资源，合理规划和跟进研发进度。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>研发管理</strong> &gt; <strong>项目管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-10-7aad9b0b328e1135c75ca7f4a951cada.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写项目基本信息，包括项目名称、类型和描述。</p>
+<ul>
+<li>
+<p>私有项目：当前用户私有的项目。</p>
+</li>
+<li>
+<p>公有项目：在租户内共享的项目。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>项目创建添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>详情</strong>，查看当前项目的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前项目的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>应用管理</strong>，为当前项目添加应用。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>成员管理</strong>，为当前项目添加项目成员。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前项目。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>创建应用。租户内创建的业务应用，应用必须属于一个项目、基于一个应用环境。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>研发管理</strong> &gt; <strong>应用管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-11-966453e587408de2a14976d5871d990c.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写应用信息，包括应用所属的项目、应用中英文名称、应用运行的环境。</p>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>应用创建成功后会显示在列表中，并加入对应的项目和环境，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>应用资源</strong>，通过Kubernetes YAML文件的形式为当前应用管理应用负载、服务、持久卷声明等资源，并一键部署或者卸载应用。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前应用的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前应用。</p>
+<blockquote>
+<p>注意：在删除应用前需要先卸载应用资源，否则无法删除应用。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理我的空间">管理我的空间<a href="#管理我的空间" class="hash-link" aria-label="管理我的空间的直接链接" title="管理我的空间的直接链接" translate="no">​</a></h2>
+<p>我的空间中展示了当前用户有权限管理或使用的研发资源，研发资源包括应用环境、项目、镜像、应用。本章节的步骤设计旨在帮助您熟悉可能存在的顺序要求，例如应用必须属于一个项目、基于一个应用环境。</p>
+<ol>
+<li>
+<p>查看应用环境。</p>
+<blockquote>
+<p>说明：我的空间中仅支持查看已有的应用环境，创建应用环境需要在研发管理模块中操作，具体操作请参见<em>算力调度平台使用指南（租户管理员） &gt; 管理研发资源</em>。</p>
+</blockquote>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>我的空间</strong> &gt; <strong>环境资源</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-15-348f05585f8a3557c09dac5b90420b77.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>环境管理</strong>页面显示了当前租户内的环境列表。选择 <strong>⋮</strong> &gt; <strong>详情</strong>，查看环境的详细信息，包括环境详情、应用资源、物理资源、环境成员的信息。</p>
+</li>
+</ol>
+</li>
+<li>
+<p>管理我的项目。通过我的项目掌握已参与的项目或者新建自己主导的项目，合理规划和跟进研发进度。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>我的空间</strong> &gt; <strong>我的项目</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-16-6eabe931663c2b31a2bf936ccb35fdea.png" width="1280" height="561" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写项目基本信息，包括项目名称、类型和描述。</p>
+<ul>
+<li>
+<p>私有项目：当前账号私有的项目。</p>
+</li>
+<li>
+<p>公有项目：在租户内共享的项目。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>项目创建添加成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>详情</strong>，查看当前项目的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前项目的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>应用管理</strong>，为当前项目添加应用。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>成员管理</strong>，为当前项目添加项目成员。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前项目。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>管理我的应用。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>我的空间</strong> &gt; <strong>我的应用</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-17-f68f9f04f8e7712d658b52f1f23d9dd7.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写应用信息，包括应用所属的项目、应用中英文名称、应用运行的环境。</p>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>应用创建成功后会显示在列表中，并加入对应的项目和环境，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>应用资源</strong>，通过Kubernetes YAML文件的形式为当前应用管理应用负载、服务、持久卷声明等资源，并一键部署或者卸载应用。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前应用的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前应用。</p>
+<blockquote>
+<p>注意：在删除应用前需要先卸载应用资源，否则无法删除应用。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理镜仓配置">管理镜仓配置<a href="#管理镜仓配置" class="hash-link" aria-label="管理镜仓配置的直接链接" title="管理镜仓配置的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="使用公开镜像">使用公开镜像<a href="#使用公开镜像" class="hash-link" aria-label="使用公开镜像的直接链接" title="使用公开镜像的直接链接" translate="no">​</a></h3>
+<p>在租户中使用云管平台添加的全局可用公开镜像。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>镜仓镜像</strong> &gt; <strong>公开镜像</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-18-d669bcd06cec7fe86078e814d8ad64e8.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>公开镜像</strong>页面显示了已添加的全局可用公开镜像，包括镜像名称、镜像地址、版本、创建时间、创建人的信息。</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="使用自建仓库">使用自建仓库<a href="#使用自建仓库" class="hash-link" aria-label="使用自建仓库的直接链接" title="使用自建仓库的直接链接" translate="no">​</a></h3>
+<p>算力调度平台支持自建命名空间并添加租户中共享或当前用户私有的镜像。</p>
+<ol>
+<li>
+<p>创建命名空间。</p>
+<ol>
+<li>
+<p>在云管平台左侧，选择<strong>镜仓镜像</strong> &gt; <strong>命名空间</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-19-6f45a30915e755b27468b9460317c974.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写命名空间的信息，包括空间名称、共享范围。</p>
+<ul>
+<li>
+<p>租户共享：在租户中共享命名空间。</p>
+</li>
+<li>
+<p>租户私有：仅当前用户可以使用命名空间。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>命名空间创建成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>查看仓库</strong>，查看当前命名空间的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>推送镜像</strong>，从本地上传镜像文件。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前命名空间。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>导入镜像。</p>
+<ol>
+<li>
+<p>在云管平台左侧，选择<strong>镜仓镜像</strong> &gt; <strong>仓库管理</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-20-f2e8c652a36a7ae1036f2494060e09f1.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>选择命名空间。</p>
+<blockquote>
+<p>说明：租户对全局命名空间只有读权限，无法向全局命名空间导入镜像或者编辑已有镜像。</p>
+</blockquote>
+</li>
+<li>
+<p>单击<strong>导入镜像</strong>。</p>
+</li>
+<li>
+<p>选择导入方式。</p>
+<ul>
+<li>
+<p>归档上传：上传tar或tar.gz格式的镜像包。</p>
+</li>
+<li>
+<p>远端地址导入：填写源镜像地址以及仓库认证信息。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>填写仓库名称。如果导入方式为归档上传，支持从镜像包提取名称，但需要先选择镜像文件。</p>
+</li>
+<li>
+<p>填写标签。</p>
+</li>
+<li>
+<p>添加镜像文件。</p>
+<ul>
+<li>
+<p>如果导入方式为归档上传：从本地拖拽文件或通过按钮选择文件。</p>
+<blockquote>
+<p>说明：归档上传的文件大小建议不大于2GB，不得超过5GB。如果大于2GB，建议使用<code>docker push</code>方式上传。</p>
+</blockquote>
+</li>
+<li>
+<p>如果导入方式为远端地址导入：填写源镜像地址，选择认证方式并填写用户名、密码等必要信息。</p>
+<blockquote>
+<p>说明：如果源镜像仓库位于内网或者使用NodePort registry，可以打开允许使用HTTP传输。在保证数据安全的前提下，使用HTTP传输比加密传输更高效。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>开始导入</strong>。</p>
+</li>
+<li>
+<p>您可以单击<strong>导入进度</strong>，查看镜像导入情况。镜像导入成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>查看版本</strong>，查看当前镜像版本、摘要等详细信息，并复制镜像Pull命令。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前镜像。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理资源服务">管理资源服务<a href="#管理资源服务" class="hash-link" aria-label="管理资源服务的直接链接" title="管理资源服务的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="管理配置">管理配置<a href="#管理配置" class="hash-link" aria-label="管理配置的直接链接" title="管理配置的直接链接" translate="no">​</a></h3>
+<p>算力调度平台通过配置管理系统提供全流程、精细化的配置管控能力，保障系统稳定运行与数据安全。</p>
+<blockquote>
+<p>说明：在算力调度平台中，无需手动创建配置、存储、应用负载、任务等资源服务，在业务应用中以Kubernetes YAML文件的形式添加应用资源后，会自动启动和维护对应的资源服务。</p>
+</blockquote>
+<p>管理配置时涉及配置项、密钥相关的操作，本章节的步骤设计旨在帮助您熟悉可能存在的顺序要求，例如配置项更为通用，密钥适用于敏感数据。</p>
+<ol>
+<li>
+<p>管理配置。配置是一种API资源，用于存储非密钥/值数据，例如配置文件和环境变量，帮助用户根据业务需求维护整体配置方案，高效适配不同场景需求。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>配置管理</strong> &gt; <strong>配置项</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-21-514e4525a67e6c80767c50954a902dd5.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>配置项</strong>页面显示了当前租户内已创建配置的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看配置的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前配置。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>管理密钥。密钥是一种API资源，用于存储敏感数据，例如密码、密钥和证书，通过严格的权限控制与安全策略，为数据传输和存储筑牢安全防线。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>配置管理</strong> &gt; <strong>密钥</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-22-be7e694bce9ba630dccdd7ed832bbc1a.png" width="1280" height="556" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>密钥</strong>页面显示了当前租户内已创建密钥的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看密钥的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前密钥。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="管理存储">管理存储<a href="#管理存储" class="hash-link" aria-label="管理存储的直接链接" title="管理存储的直接链接" translate="no">​</a></h3>
+<p>您可以定义存储类并通过持久卷声明为容器组动态提供持久化存储。</p>
+<blockquote>
+<p>说明：在算力调度平台中，无需手动创建配置、存储、应用负载、任务等资源服务，在业务应用中以Kubernetes YAML文件的形式添加应用资源后，会自动启动和维护对应的资源服务。</p>
+</blockquote>
+<p>本章节的步骤设计旨在帮助您熟悉可能存在的顺序要求，例如创建持久卷声明时需要依赖已经创建的存储类，才能正常创建和挂载持久卷。</p>
+<ol>
+<li>
+<p>查看存储供应策略。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>存储管理</strong> &gt; <strong>存储类</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-23-103533a27a9e387669af3238663053a0.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>存储类</strong>页面显示了当前租户内已创建存储类的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看存储类的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前存储类。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>查看请求存储资源的声明。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>存储管理</strong> &gt; <strong>持久卷声明</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-24-20bef30cca0e56c74e5b4fa39987a497.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>持久卷声明</strong>页面显示了当前租户内已创建持久卷声明的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看持久卷声明的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前持久卷声明。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="3">
+<li>
+<p>查看自动创建的持久卷。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>存储管理</strong> &gt; <strong>持久卷</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-25-50e2682b59b6f3d76c2e4373ce521348.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>持久卷</strong>页面显示了当前租户内已创建持久卷的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看持久卷的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前持久卷。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="管理运行环境">管理运行环境<a href="#管理运行环境" class="hash-link" aria-label="管理运行环境的直接链接" title="管理运行环境的直接链接" translate="no">​</a></h3>
+<p>算力调度平台通过运行环境维护部署应用程序和提供对外服务所需的应用资源。</p>
+<blockquote>
+<p>说明：在算力调度平台中，无需手动创建配置、存储、应用负载、任务等资源服务，在业务应用中以Kubernetes YAML文件的形式添加应用资源后，会自动启动和维护对应的资源服务。</p>
+</blockquote>
+<p>管理运行环境时涉及应用负载、服务、容器组相关的操作，本章节的步骤设计旨在帮助您熟悉可能存在的顺序要求，例如创建部署类型的应用负载后，集群会自动启动和维护所需数量的容器组副本，如果需要提供稳定的访问入口，您可以创建服务并关联应用负载。</p>
+<ol>
+<li>
+<p>管理工作负载。工作负载是在集群中运行的应用程序实例，例如使用部署来部署一个Web应用、使用有状态副本集来部署一个数据库。工作负载可以包含一个或多个容器组来处理业务请求，管理部署、扩展、更新和恢复等应用程序的生命周期，确保应用程序的稳定性和可用性。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>运行管理</strong> &gt; <strong>工作负载</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-26-1c371a93ea8e55a60bfed4bae6566762.png" width="1280" height="556" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>应用负载</strong>页面显示了当前租户内已创建工作负载的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看工作负载的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前工作负载。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>管理服务。服务用于关联一组提供相同功能的容器组，将容器组的Endpoint组成单一资源，从而将运行在容器组上的应用程序转为公开的网络服务。服务提供了一个稳定的访问入口，在应用负载动态伸缩或升级时也不需要修改客户端的访问地址。例如创建一个服务来暴露一个Web应用，客户端可以通过服务的域名绑定形式或<code>NodeIP:NodePort</code>来访问Web应用。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>运行管理</strong> &gt; <strong>服务</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-27-bcf4d48d5496bee160532634abf1aa42.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>服务</strong>页面显示了当前租户内已创建服务的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看服务的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前服务。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>管理容器组。容器组（Pod）是应用程序的基本执行单元，是Kubernetes对象模型中最小的可部署的计算单元。在创建无状态服务、有状态服务、守护进程服务等应用负载或者一次性任务、周期性任务时，都需要设置容器组的规格。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，单击<strong>资源服务</strong> &gt; <strong>运行管理</strong> &gt; <strong>容器组</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-28-29080aba9d546b44391178a622621360.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>容器组</strong>页面显示了当前租户内已创建容器组的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看容器组的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前容器组。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="管理任务">管理任务<a href="#管理任务" class="hash-link" aria-label="管理任务的直接链接" title="管理任务的直接链接" translate="no">​</a></h3>
+<p>算力调度平台通过任务执行一次性或者周期性的任务，例如数据处理、机器学习模型训练等一次性计算任务，周期性任务是在普通任务功能基础上，支持按分钟、小时等周期设置计划。作为对比，应用负载用于提供持续运行的、需要被持续维护和扩展的应用程序，例如维护可稳定访问的网站。</p>
+<blockquote>
+<p>说明：在算力调度平台中，无需手动创建配置、存储、应用负载、任务等资源服务，在业务应用中以Kubernetes YAML文件的形式添加应用资源后，会自动启动和维护对应的资源服务。</p>
+</blockquote>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>资源服务</strong> &gt; <strong>任务管理</strong> &gt; <strong>普通任务</strong>，或者选择<strong>资源服务</strong> &gt; <strong>任务管理</strong> &gt; <strong>定时任务</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-29-783db0a56d3aaab97c8240c4e284a006.png" width="1280" height="558" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-30-8115fd1a172f71cbe13956751537cdc2.png" width="1280" height="556" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>普通任务</strong>页面显示了当前租户内已创建一次性任务的列表，<strong>定时任务</strong>页面显示了当前租户内已创建周期性任务的列表，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择环境并查看任务的详情。</p>
+</li>
+<li>
+<p>选择环境，然后选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前任务。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="管理监控告警">管理监控告警<a href="#管理监控告警" class="hash-link" aria-label="管理监控告警的直接链接" title="管理监控告警的直接链接" translate="no">​</a></h2>
+<p>算力调度平台通过监控告警主动通知需要注意的资源状态，助力高效主动运维。</p>
+<p>管理监控告警时涉及规则组、告警规则、通知渠道、通知组、告警消息相关的操作，本章节的步骤旨在帮助您熟悉可能存在的顺序要求，例如告警规则必须属于一个规则组，需要提前创建通知渠道和通知组。</p>
+<ol>
+<li>
+<p>创建规则组。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>监控观测</strong> &gt; <strong>规则配置</strong> &gt; <strong>规则组</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-31-3e79e108613ec51c5cb7547e45340c0e.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写规则组的信息，包括名称、分类、是否启用、备注。</p>
+<table><thead><tr><th><strong>资源组分类</strong></th><th><strong>资源类描述</strong></th></tr></thead><tbody><tr><td>system</td><td><ul><li>cluster：集群相关的告警规则。</li><li>environment：环境相关的告警规则。</li><li>host：节点相关的告警规则。</li></ul></td></tr><tr><td>container</td><td><ul><li>containter：容器组相关的告警规则。</li><li>log：日志相关的告警规则。</li><li>volume：持久卷声明相关的告警规则。</li></ul></td></tr><tr><td>middleware</td><td><ul><li>java：Java组件相关的告警规则。</li><li>mysql：MySQL数据库相关的告警规则。</li><li>redis：Redis数据库相关的告警规则。</li></ul></td></tr><tr><td>openTelemetry</td><td><ul><li>jvm：Java虚拟机组件相关的告警规则。</li><li>http：HTTP协议相关的告警规则。</li></ul></td></tr><tr><td>network</td><td><ul><li>http：HTTP协议相关的告警规则。</li><li>tcp：TCP协议相关的告警规则。</li></ul></td></tr><tr><td>aicard</td><td><ul><li>gpu：GPU加速卡相关的告警规则。</li><li>npu：NPU加速卡相关的告警规则。</li></ul></td></tr></tbody></table>
+</li>
+<li>
+<p>规则组创建成功后会显示在列表中，您可以按需管理，并在创建告警规则时使用。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>查看</strong>，查看当前规则组的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前规则组的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前规则组。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>创建通知渠道。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>监控观测</strong> &gt; <strong>告警通知</strong> &gt; <strong>告警渠道</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-32-b85a2f41583d1a87f4f9bca854bd9fb8.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写通知渠道的信息。</p>
+<ul>
+<li>
+<p>填写必选信息：渠道名称、渠道类型。</p>
+<ul>
+<li>
+<p>飞书：获取并填写飞书Webhook URL，按需填写密钥。</p>
+</li>
+<li>
+<p>邮件：填写邮箱地址。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>填写可选信息：备注。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>通知渠道创建成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>查看</strong>，查看当前通知渠道的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前通知渠道的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>废弃</strong>，停用当前通知渠道，停用后在创建告警规则时不会显示该通知渠道。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前通知渠道。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>创建通知组。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>监控观测</strong> &gt; <strong>告警通知</strong> &gt; <strong>通知组</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-33-953863f7d56c1d8a8a885658e9b4156a.png" width="1280" height="557" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写通知组的信息。</p>
+<ul>
+<li>
+<p>填写必选信息：通知组名称、通知成员。</p>
+</li>
+<li>
+<p>填写可选信息：备注。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+<li>
+<p>通知组创建成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>查看</strong>，查看当前通知组的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前通知组的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>废弃</strong>，停用当前通知组，停用后在创建告警规则时不会显示该通知组。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前通知组。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>创建告警规则。</p>
+<ol>
+<li>
+<p>在算力调度平台左侧，选择<strong>监控观测</strong> &gt; <strong>规则配置</strong> &gt; <strong>告警规则</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-34-0ce1c65ca2691f8526cb9a5fa1f8becc.png" width="1280" height="559" class="img_ev3q"></p>
+</li>
+<li>
+<p>单击<strong>创建</strong>。</p>
+</li>
+<li>
+<p>填写规则编号、所属规则组、所属资源池。</p>
+</li>
+<li>
+<p>填写告警类型、评估时间、间隔时间、告警消息、备注。</p>
+<table><thead><tr><th><strong>告警规则基本信息</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>告警类型</td><td><ul><li>CPU使用率：监控当前资源池CPU资源的使用率。</li><li>内存使用率：监控当前资源池内存资源的使用率。</li><li>NPU使用率：监控当前资源池NPU资源的使用率。</li></ul></td></tr><tr><td>评估时间</td><td>满足告警规则后持续多久视为真正触发告警并发送告警通知，需要同时输入时间和时间单位，时间单位支持s（秒）、m（分钟）和h（小时）。例如输入10s，代表持续满足告警规则10秒后发送告警通知告警。</td></tr><tr><td>间隔时间</td><td>多久检查一次是否满足告警规则，需要同时输入时间和时间单位，时间单位支持s（秒）、m（分钟）和h（小时）。例如输入30m，代表每30分钟检查一次是否满足告警规则。</td></tr><tr><td>告警消息</td><td>产生告警时，告警消息中展示的提示内容。例如：<pre><code>节点: {{ $labels.node }}
+卡序号: {{ $labels.npu_no }}
+SN: {{ $labels.sn }}
+型号: {{ $labels.npu_name }}
+PCIe: {{ $labels.bus_id }}
+驱动: {{ $labels.driver_version }}
+MCU 固件: {{ $labels.mcu_firmware }}
+CTRL 固件: {{ $labels.npu_ctrl_firmware }}
+</code></pre></td></tr></tbody></table>
+</li>
+</ol>
+</li>
+<li>
+<p>选择告警渠道和通知组。</p>
+</li>
+<li>
+<p>配置告警级别。</p>
+<ol>
+<li>
+<p>单击<strong>添加</strong>。</p>
+</li>
+<li>
+<p>填写告警级别的信息。</p>
+<table><thead><tr><th><strong>告警级别信息</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>告警级别</td><td><ul><li>warning：系统运行可能出现问题，需要关注。</li><li>error：系统运行出现报错，需要处理。</li><li>critical：系统运行出现严重报错，需要立即处理。</li></ul></td></tr><tr><td>比较条件/阈值</td><td>阈值和比较条件组合使用，同时满足比较条件和阈值时视为达到对应的告警级别，例如指标值大于阈值、指标值大于等于阈值。</td></tr></tbody></table>
+</li>
+<li>
+<p>单击<strong>确定</strong>。</p>
+</li>
+</ol>
+</li>
+<li>
+<p>单击<strong>保存</strong>。</p>
+</li>
+<li>
+<p>告警规则创建成功后会显示在列表中，您可以按需管理。</p>
+<ul>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>查看</strong>，查看当前告警规则的详细信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>编辑</strong>，修改当前告警规则的信息。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>废弃</strong>，停用当前告警规则，停用后不会触发该告警规则。</p>
+</li>
+<li>
+<p>选择 <strong>⋮</strong> &gt; <strong>删除</strong>，删除当前告警规则。</p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="5">
+<li>
+<p>查看告警消息。</p>
+<ul>
+<li>
+<p>在算力调度平台左侧，选择<strong>监控观测</strong> &gt; <strong>告警中心</strong> &gt; <strong>实时告警</strong>。</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/算力调度平台使用指南（租户管理员）-image-35-b3b46388333d6d882beb6ef7055b0b97.png" width="1280" height="558" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>实时告警</strong>页面显示了告警消息列表，支持按关键词、告警级别、告警时间范围筛选告警消息。选择 <strong>⋮</strong> &gt; <strong>查看</strong>，按需查看单条告警的详情。</p>
+</li>
+</ul>
+</li>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/智算云平台/next/设备管理系统使用指南（系统管理员）"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">设备管理系统使用指南（系统管理员）</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/智算云平台/next/算力调度平台使用指南（租户用户）"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">算力调度平台使用指南（租户用户）</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#准备工作" class="table-of-contents__link toc-highlight">准备工作</a></li><li><a href="#典型使用流程" class="table-of-contents__link toc-highlight">典型使用流程</a></li><li><a href="#登录算力调度平台" class="table-of-contents__link toc-highlight">登录算力调度平台</a></li><li><a href="#管理企业设置" class="table-of-contents__link toc-highlight">管理企业设置</a><ul><li><a href="#管理企业要素" class="table-of-contents__link toc-highlight">管理企业要素</a></li><li><a href="#查看审计日志" class="table-of-contents__link toc-highlight">查看审计日志</a></li><li><a href="#查看算力资源" class="table-of-contents__link toc-highlight">查看算力资源</a></li><li><a href="#管理云平台密钥" class="table-of-contents__link toc-highlight">管理云平台密钥</a></li></ul></li><li><a href="#管理研发资源" class="table-of-contents__link toc-highlight">管理研发资源</a></li><li><a href="#管理我的空间" class="table-of-contents__link toc-highlight">管理我的空间</a></li><li><a href="#管理镜仓配置" class="table-of-contents__link toc-highlight">管理镜仓配置</a><ul><li><a href="#使用公开镜像" class="table-of-contents__link toc-highlight">使用公开镜像</a></li><li><a href="#使用自建仓库" class="table-of-contents__link toc-highlight">使用自建仓库</a></li></ul></li><li><a href="#管理资源服务" class="table-of-contents__link toc-highlight">管理资源服务</a><ul><li><a href="#管理配置" class="table-of-contents__link toc-highlight">管理配置</a></li><li><a href="#管理存储" class="table-of-contents__link toc-highlight">管理存储</a></li><li><a href="#管理运行环境" class="table-of-contents__link toc-highlight">管理运行环境</a></li><li><a href="#管理任务" class="table-of-contents__link toc-highlight">管理任务</a></li></ul></li><li><a href="#管理监控告警" class="table-of-contents__link toc-highlight">管理监控告警</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">希姆计算</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.streamcomputing.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">希姆计算官网<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://streamcomputing.feishu.cn/docx/Bs9mdQYn3o2nbOxoP1ZcTR0fnRd" target="_blank" rel="noopener noreferrer" class="footer__link-item">联系我们<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">开源</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/riscv-stc/riscv-matrix-project" target="_blank" rel="noopener noreferrer" class="footer__link-item">自研AI计算矩阵扩展指令集<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Stream-Computing/STCPaddleModelZoo" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度飞桨 x 希姆计算AI模型库<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">资源</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/AI加速卡/希姆计算术语表">希姆计算术语表</a></li><li class="footer__item"><a href="https://riscv.org/members/" target="_blank" rel="noopener noreferrer" class="footer__link-item">RISC-V International<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 广州希姆半导体科技有限公司Stream Computing Inc.</div></div></div></footer></div>
+</body>
+</html>
